@@ -5,15 +5,15 @@
 Console.Clear();
 Console.Write("Print an integer: ");
 int num1 = int.Parse(Console.ReadLine()!);
-Console.WriteLine(NumsProd(num1));
+Console.WriteLine(NumsProduct(num1));
 
-int NumsProd(int number)
+int NumsProduct(int number)
 {
-    int Prod = 1;
+    int Product = 1;
     while (number > 1)
     {
-        Prod = Prod * number;
+        Product = Product * number;
         number--;
     }
-    return Prod;
+    return Product;
 }
