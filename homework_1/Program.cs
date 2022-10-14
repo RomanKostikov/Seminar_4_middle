@@ -10,7 +10,7 @@ int numberB = int.Parse(Console.ReadLine()!);
 
 ToDegree(numberA, numberB);
 WriteNumber(numberA, numberB);
-
+// Функция возведения в степень
 void ToDegree(int a, int b)
 {
     int result = 1;
@@ -19,6 +19,7 @@ void ToDegree(int a, int b)
         result *= a;
     }
 }
+// Функция вывода
 void WriteNumber(int a, int b)
 {
      int result = 1;
