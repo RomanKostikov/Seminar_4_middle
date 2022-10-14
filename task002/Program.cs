@@ -6,20 +6,20 @@
 Console.Clear();
 Console.Write("Введите число: ");
 int num1 = int.Parse(Console.ReadLine()!);
-// PositiveNumber(num1);
-Console.WriteLine(NumDigits(num1));
-
-// // int PositiveNumber(int number)
-// {
-//     if (number < 0)
-//     {
-//         number *= -1;
-//     }
-// }
+PositiveNumber(num1);
+Console.WriteLine(NumDigits(PositiveNumber(num1)));
+int PositiveNumber(int number)
+{
+    if (number < 0)
+    {
+        number *= -1;
+    }
+    return number;
+}
 int NumDigits(int number)
 {
     int count = 0;
-    while (number > 1)
+    while (number > 0)
     {
         number /= 10;
         count++;
